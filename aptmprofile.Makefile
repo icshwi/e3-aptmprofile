@@ -41,9 +41,9 @@ include $(E3_REQUIRE_TOOLS)/driver.makefile
 ##EXCLUDE_ARCHS = linux-ppc64e6500
 
 
-# APP:=calcApp
-# APPDB:=$(APP)/Db
-# APPSRC:=$(APP)/src
+APP:=aptmprofileApp
+APPDB:=$(APP)/Db
+APPSRC:=$(APP)/src
 
 
 # USR_INCLUDES += -I$(where_am_I)$(APPSRC)
@@ -55,7 +55,7 @@ include $(E3_REQUIRE_TOOLS)/driver.makefile
 # USR_CPPFLAGS += -Wno-unused-function
 # USR_CPPFLAGS += -Wno-unused-but-set-variable
 
-# TEMPLATES += $(wildcard $(APPDB)/*.db)
+TEMPLATES += $(wildcard $(APPDB)/*.db)
 
 # DBDINC_SRCS += $(APPSRC)/swaitRecord.c
 # DBDINC_SRCS += $(APPSRC)/sseqRecord.c
@@ -94,6 +94,10 @@ include $(E3_REQUIRE_TOOLS)/driver.makefile
 # DBDS += $(APPSRC)/calcSupport_LOCAL.dbd
 # DBDS += $(APPSRC)/calcSupport_withSNCSEQ.dbd
 # DBDS += $(APPSRC)/calcSupport_withSSCAN.dbd
+
+SOURCES += $(APPSRC)/profile_calc.c
+DBDS += $(APPSRC)/profile_calc.dbd
+
 
 #
 # $(DBDINC_DEPS): $(DBDINC_HDRS)
