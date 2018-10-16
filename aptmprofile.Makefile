@@ -48,7 +48,7 @@ APPSRC:=$(APP)/src
 
 # USR_INCLUDES += -I$(where_am_I)$(APPSRC)
 
-# USR_CFLAGS   += -Wno-unused-variable
+USR_CFLAGS   += -std=c99
 # USR_CFLAGS   += -Wno-unused-function
 # USR_CFLAGS   += -Wno-unused-but-set-variable
 # USR_CPPFLAGS += -Wno-unused-variable
@@ -98,6 +98,9 @@ TEMPLATES += $(wildcard $(APPDB)/*.db)
 SOURCES += $(APPSRC)/profile_calc.c
 DBDS += $(APPSRC)/profile_calc.dbd
 
+SOURCES += $(APPSRC)/lmcurve.c
+SOURCES += $(APPSRC)/lmmin.c
+SOURCES += $(APPSRC)/lminvert.c
 
 #
 # $(DBDINC_DEPS): $(DBDINC_HDRS)
