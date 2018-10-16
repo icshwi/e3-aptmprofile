@@ -1,0 +1,16 @@
+>>
+Script is used     : create_e3_modules.bash
+Script Path        : /home/joaopaulomartins/devspace/e3/tools/template_gen
+User               : joaopaulomartins
+Log Time           : 2018Oct16-0919-35CEST
+e3 repo Hash       : b30a2b1
+>> 
+EPICS_MODULE_NAME  :                                                      aptmprofile
+E3_MODULE_SRC_PATH :                                                      aptmprofile
+EPICS_MODULE_URL   :                       https://gitlab.esss.lu.se/joaopaulomartins
+E3_TARGET_URL      :                                        https://github.com/icshwi
+>> 
+e3 module name     :                                                   e3-aptmprofile
+e3 module url full :           https://gitlab.esss.lu.se/joaopaulomartins/aptmprofile
+e3 target url full :                         https://github.com/icshwi/e3-aptmprofile
+>> 
